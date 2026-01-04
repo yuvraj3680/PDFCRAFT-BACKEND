@@ -2,9 +2,9 @@
   "name": "pdfcraft-backend",
   "version": "1.0.0",
   "type": "module",
-  "main": "api/index.js",
+  "main": "api/app.js",
   "scripts": {
-    "start": "node api/index.js"
+    "start": "node api/app.js"
   },
   "dependencies": {
     "adm-zip": "^0.5.10",
