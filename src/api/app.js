@@ -2,9 +2,9 @@ import express from 'express'
 import cors from 'cors'
 
 // ROUTES
-import pdfRoutes from '../src/routes/pdf'
-import splitPDFRoutes from '..src/routes/splitpdf.routes.js'
-import compressPDFRoutes from '..src/routes/compresspdf.routes.js'
+import pdfRoutes from '../routes/pdf.js'
+import splitPDFRoutes from '../routes/splitpdf.routes.js'
+import compressPDFRoutes from '../routes/compresspdf.routes.js'
 
 const app = express()
 
