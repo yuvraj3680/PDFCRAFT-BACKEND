@@ -1,10 +1,7 @@
 import express from 'express'
-import multer from 'multer'
+import upload from '../utils/multer.js'
 import { compressPDF } from '../controllers/compresspdf.controller.js'
 
 const router = express.Router()
-const upload = multer({ storage: multer.memoryStorage() })
-
-router.post('/compress', upload.single('pdf'), compressPDF)
-
+router.post('/', upload.single('pdf'), compressPDF)
 export default router
